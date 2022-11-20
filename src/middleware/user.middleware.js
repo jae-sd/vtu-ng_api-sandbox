@@ -36,7 +36,7 @@ const login = async (request, response) => {
 
     //console.log(user);
 
-    const result = await bcrypt.compare("123456", user.password);
+    const result = await bcrypt.compare(password, user.password);
     
     if(result) {
         return console.log("true", user)
