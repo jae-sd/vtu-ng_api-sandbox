@@ -6,7 +6,12 @@ const createConnection = require("./config/db")
 
 //routes
 const user = require("./routes/user.route");
-const services = require('./routes/services.route')
+const services = require('./routes/services.route');
+const ServicesSchema = require("./model/services")
+
+
+const findCostUsingKey = require("./util/test")
+
 
 
 //express middlewares
@@ -20,7 +25,7 @@ app.get("/", (req, res) => {
     res.status(200).json("Server is active");
 });
 app.use("/user", user);
-app.use("/api/v1/services", services)
+app.use("/api/v1/services", services);
 
 
 //Database Connection

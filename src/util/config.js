@@ -80,12 +80,12 @@ const tv_variation_id = {
 };
 
 const data_Variation_ids = {
-    "500" : "MTN SME Data 500MB - 30 Days",
+    "M500" : "MTN SME Data 500MB - 30 Days",
     "M1024" : "MTN SME Data 1GB - 30 Days",
     "M2024" : "MTN SME Data 2GB - 30 Days",
-    "3000" : "MTN SME Data 3GB - 30 Days",
-    "5000" : "MTN SME Data 5GB - 30 Days",
-    "10000" : "MTN SME Data 10GB - 30 Days",
+    "M3000" : "MTN SME Data 3GB - 30 Days",
+    "M5000" : "MTN SME Data 5GB - 30 Days",
+    "M10000" : "MTN SME Data 10GB - 30 Days",
     "mtn-20hrs-1500" : "MTN Data 6GB - 7 Days",
     "mtn-30gb-8000" : "MTN Data 30GB - 30 Days",
     "mtn-40gb-10000" :"MTN Data 40GB - 30 Days",
