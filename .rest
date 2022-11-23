@@ -1,3 +1,7 @@
+### if the request body appears empty in mongodb 
+### the common problem is destructing it properly
+
+
 ############ Server Status
 GET http://localhost:5001/
 content-type: application/json
