@@ -1,12 +1,14 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 5001;
-const createConnection = require("./config/db")
+
 
 //routes
 const user = require("./routes/user.route");
-const services = require('./routes/services.route')
+const services = require('./routes/services.route');
+const Admin = require("./routes/admin/services")
+
+
 
 
 //express middlewares
@@ -19,9 +21,12 @@ app.use(bodyParser.urlencoded({
 app.get("/", (req, res) => {
     res.status(200).json("Server is active");
 });
-app.use("/user", user);
-app.use("/api/v1/services", services)
 
+//client routes
+app.use("/user", user);
+app.use("/api/v1/services", services);
+
+app.use("/admin/services/", Admin)
 
 //Database Connection
 createConnection((error) => {
@@ -36,6 +41,7 @@ createConnection((error) => {
 
 
 
+module.exports = app;
 
 
 
