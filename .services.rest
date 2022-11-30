@@ -1,0 +1,31 @@
+POST http://localhost:5001/services
+content-type: application/json
+
+[{
+    "M500": {
+        "cost": "5000"
+    }
+},
+{
+    "M1024": {
+        "cost": "1000"
+    }
+}]
+
+
+[{
+    "services": {
+        "airtime":{
+
+        },
+        "data":{
+
+        },
+        "tv":{
+
+        },
+        "electricity":{
+
+        }
+    }
+}]

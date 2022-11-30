@@ -31,6 +31,9 @@ const userSchema = new mongoose.Schema({
     phone: {
         type: String,
         required: [true, "Invalid Phone Number"]
+    },
+    balance: {
+        type: String
     }
 });
 
