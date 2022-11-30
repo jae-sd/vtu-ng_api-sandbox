@@ -28,15 +28,6 @@ app.use("/api/v1/services", services);
 
 app.use("/admin/services/", Admin)
 
-//Database Connection
-createConnection((error) => {
-    if(!error) {
-        app.listen(PORT, () => {
-            console.log('Sandbox Server Is Running')
-        })
-    }
-})
-
 
 
 
